@@ -1,95 +1,271 @@
 body {
   background-image: url("img/vim-back.jpg");
+  margin: 0 auto;
   background-repeat: no-repeat;
-  background-color: black;
-  margin: auto;
-  width: auto;
-  position: absolute;z-index: 1
+  background-color: #1a1d1e;
 
 }
 #container {
-  margin-left: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-#accueil {
-  margin-top: 90px;
-  color: white;
-  font-size: 1.6em;
-  font-weight: bold;
-  font-family: sans-serif;
+/*/////////////////////////////     CSS SMARTPHONE     ////////////////////////////////////////////
+//                                                                                               //
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media all and (min-width: 320px) {  /*--------ici media css pr ecran)*/
+
+body {
+                background-size: 100%;
 }
+
+nav {
+                margin-top: 5px;
+                display: inline-block;
+
+                }
+
+.home {
+                color: black;
+                font-size: 0.8em;
+                font-weight: bold;
+                font-family: sans-serif;
+                margin-left: 20%;
+                margin-top: 12%;
+                background-color: white;
+                width: 90%;
+                padding: 2%;
+                display: inline-block;
+                float: left;
+
+}
+
+
 a {
-  text-decoration: none;
-  color: white;
+                text-decoration: none;
+                color: black;
+                padding: 4%;
 }
+
 
 #title {
-  height: 100px;
-  margin-left: 280px;
-  margin-top: 150px;
-  display: inline-block;
-  color:white;
-  font-size: 4.5em;
-  font-weight: bold;
-  font-family: sans-serif;
+                height: 15%;
+                margin-left: 35%;
+                margin-top: 8%;
+                color: white;
+                font-size: 1.5em;
+                font-weight: bold;
+                font-family: sans-serif;
+}
+
+ul {
+    line-height: 1.6;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+#list {
+                border: 2px solid white;
+                padding-bottom: 5%;
+                padding-top: 1%;
+                margin: 0 auto;
+                width: 90%;
+                height: 70%;
+                font-size: 1em;
+                font-weight:normal;
+                font-family: sans-serif;
+                color: white;
+
+}
+span {
+        font-weight: bold;
+        color: #96cfb3;
+}
+.violet {
+        font-weight: bold;
+        font-size: 1em;
+        color: #96cfb3;
+        display: inline-block;
+}
+
+#list li {
+                display: inline-block;
+                padding-right: 2%;
+                padding-left: 0%;
+                margin-left: 0%;
+
+}
+
+li img {
+        display: inline-block;
 }
 
 
-#command {
-  margin-top: 30px;
-  margin-left: 30px;
-
+ section {
+                margin-top: -3%;
+                margin-bottom: 2%;
+                color:white;
+                font-size: 0.7em;
+                font-weight: normal;
+                font-family: sans-serif;
+                margin-left: 40%;
+}
 }
 
-#commandtitre {
-  font-size: 2em;
-  color: white;
-  margin-left: 50px;
-  margin-top: 50px;
-  font-family: sans-serif;
+/*/////////////////////////////     CSS TABLETTE      ////////////////////////////////////////////
+//                                                                                               //
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media all and (min-width: 599px) {
+
+
+nav {
+             margin-top: 2%;
+             display: inline-block;
+             float: left;
+           }
+.home {
+               color: rgb(0, 0, 0);
+               font-size: 1.5em;
+               font-weight: bold;
+               font-family: sans-serif;
+               margin-left: 28%;
+               background-color: rgb(0, 0, 0);
+               width: 75%;
+               padding: 3%;
+               display: inline-block;
+           }
+
+a {
+             text-decoration: none;
+             color: white;
+           }
+
+#title {
+             height: 40%;
+             margin-left: 36%;
+             margin-top: 13%;
+             color: white;
+             font-size: 3.5em;
+             font-weight: bold;
+             font-family: sans-serif;
+             }
+
+
+#list {
+               border: 2px solid white;
+               padding-bottom: 5%;
+               padding-top: 3%;
+               padding-left: 3%;
+               margin: 0 auto;
+               width: 85%;
+               height: 70%;
+               font-size: 1.2em;
+               font-weight: bold;
+               font-family: sans-serif;
+               color: white;
+
+           }
+#list li {
+               display:inline-block;
+               padding-right: 7%;
+               padding-left: 0%;
+               line-height: 2;
+               padding: 3%;
 
 }
-#category {
-  font-size: 1.5em;
-  color: white;
-  margin-left: 70px;
-  margin-top: 30px;
-  font-family: sans-serif;
-
+span {
+        font-weight: bold;
+        color: #96cfb3;
+        font-size: 2em;
 }
-.columns {
-    width: 950px;
-    margin-top: 30px;
-	  -webkit-columns: 6;
-		-moz-columns: 6;
-		columns: 6;
-    -webkit-column-gap: 3em;
-    -moz-column-gap: 3em;
-    column-gap: 3em;
-    /*-webkit-column-rule: 0.2em dotted #777;
-    -moz-column-rule: 0.2em dotted #777;
-    column-rule: 0.2em dotted #777;*/
-    position: absolute;z-index: 2;
-
+.violet {
+        font-weight: bold;
+        font-size: 1em;
+        color: #90fac6;
+        display: inline-block;
 }
 
-li {
-  /*line-height: 2;
-  font-size: 1.2em;
-  color: white;
-  font-family: sans-serif;
-  list-style: none;*/
-  color: white;
-  padding: 20px;
-  margin: 0;
-  display: inline-block;
-  width: 100%;
-  line-height: 1.5;
+section {
+             margin-top: 7%;
+             color: white;
+             font-size: 1.8em;
+             font-weight: bold;
+             font-family: sans-serif;
+             margin-left: 35%;
+             margin-bottom: 5%;
+           }
+                 }
+
+/*/////////////////////////////     CSS DESKTOP    ////////////////////////////////////////////
+//                                                                                               //
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media all and (min-width: 900px) {
 
 
-}
-span{
-  color: rgb(255, 197, 143);
-  font-weight: bold;
-  font-size: 2em;
+nav {
+              margin-top: 4%;
+              margin-left: 7%;
+              display: inline-block;
+            }
+
+.home {
+                color: rgb(0, 0, 0);
+                font-size: 1.5em;
+                font-weight: bold;
+                font-family: sans-serif;
+                margin-left: 19%;
+                margin-top: 13%;
+                background-color: white;
+                width: 100%;
+                padding: 3%;
+                display: inline-block;
+            }
+
+a {
+              text-decoration: none;
+              color: black;
+              margin-left: 3%;
+              padding: 5%;
+            }
+
+#title {
+              height: 60%;
+              margin-left: 35%;
+              margin-top: 15%;
+              color: white;
+              font-size: 5em;
+              font-weight: bold;
+              font-family: sans-serif;
+              }
+section {
+              margin-top: 6%;
+              color: white;
+              font-size: 2em;
+              font-weight: bold;
+              font-family: sans-serif;
+
+              }
+
+#list {
+                border: 2px solid white;
+                padding-bottom: 5%;
+                padding-top: 0%;
+                padding-left: 3%;
+                margin-left: 7%;
+                width: 80%;
+                height: 70%;
+                font-size: 1.2em;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+
+            }
+#list li {
+                display: inline-block;
+                line-height: 2;
+                padding: 2%;
+            }
 }
